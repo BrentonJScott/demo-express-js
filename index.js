@@ -9,6 +9,7 @@ app.use(express.static('static'))
 app.use(express.json());
 
 app.get("/api/data", (req, res) => {
+  console.log(process.env.TEST_ENV);
   res.status(200).json({
     data: [
       { id: 1, title: "Some data" },
