@@ -13,6 +13,7 @@ app.get("/api/data", (req, res) => {
     data: [
       { id: 1, title: "Some data" },
       { id: 2, title: "Some other data" },
+      { id: 2, title: process.env.TEST_ENV },
     ],
   });
 });
